@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-rows: 240px 800px 70px;
+    grid-template-areas: 
+            "head"
+            "main"
+            "foot"; 
+}
+
+#header {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 27px;
+    text-align: center;
+    color: rgb(243, 243, 10);
+    background-color: rgb(52, 13, 223);
+    text-shadow: 5px 5px red;
+    padding: 30px;
+    border: 5px solid red;
+    display: grid;
+    grid-template-rows: 70% 1fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    gap: 10px;
+    grid-area: head;
+
+}
+
+main {
+    display: grid;
+    grid-template-rows: 55% 45%;
+    grid-template-areas: 
+            "leftP"
+            "rightP"; 
+    grid-area: main;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgb(52, 13, 223);
+    border: 5px solid red;
+    text-align: center;
+    padding-top: 22px;
+    grid-area: foot;
+}
+
+/* The display will change to flex with button press. */
+#navLinks {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+    gap: 3em;
+    list-style-type: none;
+    position: fixed;
+    background-color: rgb(52, 13, 223);
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border: 5px solid red;
+}
+
+#navLinks a {
+    color: rgb(243, 243, 10);
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 5px 5px red;
+    text-decoration: none;
+}
+
+#navLinks a:hover {
+    font-size: 25px;
+}
+
+.left {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-rows: 60% 30%;
+    align-items: center;
+    justify-items: center;
+    grid-area: leftP;
+}
+
+.middle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(243, 243, 10);
+    text-shadow: 5px 5px red;
+    padding: 30px;
+    background-color: black;
+    height: 800px;
+    grid-area: mid;
+    display: none;
+}
+
+.right {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-rows: 67% 23%;
+    align-items: center;
+    justify-items: center;
+    grid-area: rightP;
+}
+
+.mario {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.link {
+    height: 125px;
+    transform: scaleX(-1);
+}
+
+.mega {
+    height: 150px;
+    transform: scaleX(-1);
+    margin-bottom: 40px;
+}
+
+.ninja:hover {
+    height: 280px;
+}
+
+.mario:hover {
+    height: 230px;
+}
+
+.mega:hover {
+    height: 180px;
+}
+
+.link:hover {
+    height: 150px;
+}
+
+/* hamburger button */
+.line {
+    width: 50px;
+    height: 5px;
+    background: rgb(243, 243, 10);
+    margin: 10px;
+}
+
+#hamB {
+    cursor: pointer;
+    background-color: rgb(52, 13, 223);
+    grid-area: hb;
+    position: relative;
+}
+
+#hamB:hover {
+    border: 3px solid red;
+}
+
+@media (min-width: 500px) {
+    .title {
+        font-size: 35px;
+    }
+
+    main {
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+                "leftP rightP";
+    }
+
+    .mega {
+    margin-top: 30px;
+    }
+}
+
+@media (min-width: 800px) {
+    #hamB {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    li {
+        width: 25%;
+    }
+
+    #navLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px 50px 0px 50px;
+        border: none;
+        position: static;
+    }
+}
+
+@media (min-width: 1300px) {
+    .title {
+        font-size: 60px;
+    }
+
+    main {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 50% 1fr;
+        grid-template-areas: 
+                "leftP mid rightP";
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px 30px 80px 30px;
+    }
+
+    .welcome {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    .heart {
+        margin-bottom: 120px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .title {
+        font-size: 56px;
+    }
+
+    #navLinks {
+        justify-content: space-around;
+        gap: 6em;
+    }
+}
