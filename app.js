@@ -1,11 +1,11 @@
-// Toggles hamburger button, makes its container sticky, and scrolls the window to the top. 
+// Toggles hamburger button, disables scrolling, and scrolls to the top. 
 
 const hamburger = document.querySelector(".hamB");
 const navLinks = document.querySelector(".navLinks");
-const head = document.querySelector(".header");
+const html = document.querySelector('html');
 
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
-    head.classList.toggle("stick");
+    html.classList.toggle('-is-locked');
     window.scrollTo(0, 0);
 });

@@ -81,6 +81,7 @@ footer {
     left: 0px;
     top: 0px;
     gap: 6em;
+    padding-top: 230px;
 }
 
 .navLinks a {
@@ -174,7 +175,6 @@ li {
 .hamB {
     cursor: pointer;
     background-color: rgb(52, 13, 223);
-    grid-area: hb;
     position: relative;
     /* making the border transparent keeps it from moving when :hover */
     border: 3px solid transparent;
@@ -182,6 +182,10 @@ li {
 
 .hamB:hover {
     border: 3px solid red;
+}
+
+html.-is-locked {
+    overflow: hidden;
 }
 
 @media (min-width: 500px) {
@@ -227,8 +231,16 @@ li {
         position: static;
     }
 
+    .navLinks.open {
+        padding-top: 0;
+    }
+
     .header {
         position: relative;
+    }
+
+    html.-is-locked {
+        overflow: visible;
     }
 }
 
