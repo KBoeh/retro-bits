@@ -92,7 +92,7 @@ footer {
     text-decoration: none;
 }
 
-.navLinks a:hover, .navLinks a:active {
+.navLinks a:hover {
     font-size: 25px;
 }
 
