@@ -23,7 +23,7 @@ body {
     padding: 30px;
     border: 5px solid red;
     display: grid;
-    grid-template-rows: 70% 1fr;
+    grid-template-columns: 75% 1fr;
     justify-items: center;
     align-items: center;
     position: relative;
@@ -34,13 +34,9 @@ body {
 }
 
 .title {
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 10px;
     line-height: 1.4em;
-}
-
-.header.stick {
-    position: sticky;
 }
 
 main {
@@ -80,8 +76,7 @@ footer {
     width: 100%;
     left: 0px;
     top: 0px;
-    gap: 6em;
-    padding-top: 230px;
+    gap: 3em;
 }
 
 .navLinks a {
@@ -190,7 +185,7 @@ html.-is-locked {
 
 @media (min-width: 500px) {
     .title {
-        font-size: 34px;
+        font-size: 50px;
     }
 
     main {
@@ -206,6 +201,11 @@ html.-is-locked {
 }
 
 @media (min-width: 800px) {
+    .header {
+        grid-template-columns: none;
+        grid-template-rows: 70% 1fr;
+    }
+
     .hamB {
         display: none;
     }
@@ -246,7 +246,7 @@ html.-is-locked {
 
 @media (min-width: 1300px) {
     .title {
-        font-size: 46px;
+        font-size: 80px;
     }
 
     main {
@@ -276,7 +276,7 @@ html.-is-locked {
 
 @media (min-width: 1600px) {
     .title {
-        font-size: 56px;
+        font-size: 95px;
     }
 
     .navLinks {
