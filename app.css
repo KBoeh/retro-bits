@@ -170,7 +170,6 @@ li {
     position: relative;
     /* making the border transparent keeps it from moving when :hover */
     border: 3px solid transparent;
-    align-self: center;
 }
 
 .hamB:hover {
@@ -195,7 +194,11 @@ html.-is-locked {
     }
 
     .mega {
-    margin-top: 30px;
+        margin-top: 30px;
+    }
+    
+     .navLinks.open li {
+        padding-top: 15px;
     }
 }
 
