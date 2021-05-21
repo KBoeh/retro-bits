@@ -59,7 +59,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     font-family: 'Press Start 2P', cursive;
-    gap: 3em;
+    gap: 2em;
     list-style: none;
     position: fixed;
     background-color: rgb(52, 13, 223);
