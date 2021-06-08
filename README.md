@@ -8,4 +8,4 @@ I tested the site's functionality and design within smaller phone sizes (Galaxy 
 I experimented making elements stack, or dissapear, etc. when the window is resized.
 Also, I wanted to see if making the nav take up the whole screen on toggle would work.
 There are some design elements I will never do again, but I learned allot (and had fun in the process).
-I gave the page an 8-bit old-school Nintendo feel and linked (almost everything) to relevant sites (which are not of my creation).
+I gave the page an 8-bit old-school Nintendo feel and linked (almost everything) to relevant sites (**which are not of my creation**).
