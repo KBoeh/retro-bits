@@ -1,5 +1,7 @@
 # retro-bits
 
+https://kboeh.github.io/retro-bits/
+
 I originally created this a few months ago and decided to update it using what I have learned since then.
 This was the first page I created using grid and with a nav button that can be toggled.
 I tested the site's functionality and design within smaller phone sizes (Galaxy S5) all the way up to desktop.
