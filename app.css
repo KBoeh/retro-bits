@@ -14,7 +14,7 @@ body {
             "foot"; 
 }
 
-.header {
+header {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     color: rgb(243, 243, 10);
@@ -203,7 +203,7 @@ html.-is-locked {
 }
 
 @media (min-width: 800px) {
-    .header {
+    header {
         grid-template-rows: 10% 1fr;
     }
 
@@ -213,10 +213,6 @@ html.-is-locked {
 
     .hamB {
         display: none;
-    }
-
-    .header.stick {
-        position: static;
     }
 
     nav {
@@ -240,7 +236,7 @@ html.-is-locked {
         padding-top: 0;
     }
 
-    .header {
+    header {
         position: relative;
     }
 
